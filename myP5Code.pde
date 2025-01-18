@@ -4,25 +4,42 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+float flower = 20;
+float flowerY = 400;
+float droneX = 20;
+float colorChange =0;
 
 //🟢Draw Procedure - Runs on Repeat
-draw = function(){
+ draw = function(){
  
   background(255,255,255,0);
   
-   if(mousePressed){
+   if (mousePressed) {
     showXYPositions();
     
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
+  fill (255, 215,+ colorChange, 0);
+  ellipse (200, flowerY, flower, flower);
+  ellipse(100,flowerY, flower, flower);
+  fill (255,165, + colorChange,0);
+  ellipse (250, flowerY, flower, flower);
+  ellipse (300, flowerY, flower, flower);
+  ellipse (150, flowerY, flower, flower);
   
-  fireworkX = fireworkX + 1;
+ fill (255,255,255);
+ rect(droneX, 20, 10, 10);
+  flower += 1
+ flowerY-=3
+ droneX+=2
 
-}
-
+colorChange += 0.5;
+  if (colorChange> 40){
+  colorChange =0;
+  }
+  }
+  
 //🟡Extra FUN Features Ms. Hall Added
 //Proceed with Caution (and Curiosity!)
 
