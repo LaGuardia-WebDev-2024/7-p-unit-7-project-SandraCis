@@ -20,10 +20,10 @@ float colorChange =0;
   }
   
   //🎯Animation Code Goes Here
-  fill (255, 215,+ colorChange, 0);
+  fill (255, 215 + colorChange, 0);
   ellipse (200, flowerY, flower, flower);
   ellipse(100,flowerY, flower, flower);
-  fill (255,165, + colorChange,0);
+  fill (255,165 + colorChange,0);
   ellipse (250, flowerY, flower, flower);
   ellipse (300, flowerY, flower, flower);
   ellipse (150, flowerY, flower, flower);
